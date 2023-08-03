@@ -7,7 +7,7 @@ const NavBar = ({ isDarkTheme, onToggleTheme }) => {
   return (
     <View style={[styles.navBar, { backgroundColor: isDarkTheme ? '#0B978D' : '#f0f0f0' }]}>
       <Text style={[styles.navBarText, { color: isDarkTheme ? '#ffffff' : '#333' }]}>
-        YPNOS
+        Υpnos
       </Text>
       <Switch color={'black'} value={isDarkTheme} onValueChange={onToggleTheme} />
     </View>
@@ -21,7 +21,8 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     height: 60,
     width: '100%',
-    paddingHorizontal: 16
+    paddingHorizontal: 16,
+    borderRadius: 5
   },
   navBarText: {
     fontSize: 24,
